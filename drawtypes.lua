@@ -191,6 +191,7 @@ drawtypes.airlike = function(node)
 	}
 end
 
+-- NOTE: Look into liquid rollback for this
 -- drawtypes.liquid
 
 -- drawtypes.flowingliquid

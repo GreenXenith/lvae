@@ -40,7 +40,8 @@ minetest.register_entity("lvae:node", {
 		self.object:set_properties({textures = textures})
 	end,
 	on_step = function(self, dtime)
-		-- Todo convert this to recursive update_textures function using FPS
+		-- TODO: convert this to recursive update_textures function using FPS
+        -- TODO: Move to global handler to reduce active objects
 		if self.animated then
 			self.timer = self.timer + dtime
 			self:update_textures()

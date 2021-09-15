@@ -29,9 +29,11 @@ print(lvae:get_node({x = 0, y = 0, z = 0}).name) -- Will return "default:cobble"
 ### Drawtypes
 * Fix nodeboxes (they are far from perfect)
 * `plantlike_rooted`
+* `glasslikeliquidlevel` (paramtype2)
 * `glasslike_framed`  
   I do not intend to implement liquids any time soon, but it should be possible.
 
 ### API
 * Object flags (interactable, metadata, etc)
 * Implement as many node methods as possible
+* Import nodes from VoxelManip
