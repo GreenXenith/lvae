@@ -182,7 +182,7 @@ for name, def in pairs(minetest.registered_nodes) do
 		-- which means the media shouldnt be sent until the server step starts
 		-- and the server is loaded.
 		minetest.after(0, function()
-			minetest.dynamic_add_media(path .. "/" .. filename)
+			minetest.dynamic_add_media({filepath = path .. "/" .. filename}, function() end)
 		end)
 	end
 end
